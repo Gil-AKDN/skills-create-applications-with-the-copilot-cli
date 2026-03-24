@@ -1,46 +1,37 @@
-# Create applications with the Copilot CLI
+<div align="center">
 
-<img src="https://octodex.github.com/images/Professortocat_v2.png" align="right" height="200px" />
+# 🎉 Congratulations Gil-AKDN! 🎉
 
-Hey Gil-AKDN!
+<img src="https://octodex.github.com/images/welcometocat.png" height="200px" />
 
-Mona here. I'm done preparing your exercise. Hope you enjoy! 💚
+### 🌟 You've successfully completed the exercise! 🌟
 
-Remember, it's self-paced so feel free to take a break! ☕️
+## 🚀 Share Your Success!
 
-[![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/Gil-AKDN/skills-create-applications-with-the-copilot-cli/issues/1)
+**Show off your new skills and inspire others!**
 
-## CLI calculator
+<a href="https://twitter.com/intent/tweet?text=I%20just%20completed%20the%20%22Create%20applications%20with%20the%20Copilot%20CLI%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2FGil-AKDN%2Fskills-create-applications-with-the-copilot-cli%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Share%20on%20X-1da1f2?style=for-the-badge&logo=x&logoColor=white" alt="Share on X" />
+</a>
+<a href="https://bsky.app/intent/compose?text=I%20just%20completed%20the%20%22Create%20applications%20with%20the%20Copilot%20CLI%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2FGil-AKDN%2Fskills-create-applications-with-the-copilot-cli%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Share%20on%20Bluesky-0085ff?style=for-the-badge&logo=bluesky&logoColor=white" alt="Share on Bluesky" />
+</a>
+<a href="https://www.linkedin.com/feed/?shareActive=true&text=I%20just%20completed%20the%20%22Create%20applications%20with%20the%20Copilot%20CLI%22%20GitHub%20Skills%20hands-on%20exercise!%20%F0%9F%8E%89%0A%0Ahttps%3A%2F%2Fgithub.com%2FGil-AKDN%2Fskills-create-applications-with-the-copilot-cli%0A%0A%23GitHubSkills%20%23OpenSource%20%23GitHubLearn" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Share%20on%20LinkedIn-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Share on LinkedIn" />
+</a>
 
-This repository now includes a basic Node.js CLI calculator in `src/calculator.js`.
+### 🎯 What's Next?
 
-Supported operations:
-- addition: `+`
-- subtraction: `-`
-- multiplication: `*`, `x`, `X`, `×`
-- division: `/`, `÷`
-- modulo: `%`
-- exponentiation (power): `^`, `**`
-- square root: `sqrt`, `√`
+**Keep the momentum going!**
 
-Run it with:
+[![](https://img.shields.io/badge/Return%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/Gil-AKDN/skills-create-applications-with-the-copilot-cli/issues/1)
+[![GitHub Skills](https://img.shields.io/badge/Explore%20GitHub%20Skills-000000?style=for-the-badge&logo=github&logoColor=white)](https://learn.github.com/skills)
 
-```bash
-npm start -- 8 + 4
-```
+*There's no better way to learn than building things!* 🚀
 
-Or:
-
-```bash
-node src/calculator.js 8 + 4
-```
-
-Square root also supports a unary CLI form:
-
-```bash
-npm start -- sqrt 81
-```
+</div>
 
 ---
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+
