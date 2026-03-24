@@ -10,7 +10,37 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 [![](https://img.shields.io/badge/Go%20to%20Exercise-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/Gil-AKDN/skills-create-applications-with-the-copilot-cli/issues/1)
 
+## CLI calculator
+
+This repository now includes a basic Node.js CLI calculator in `src/calculator.js`.
+
+Supported operations:
+- addition: `+`
+- subtraction: `-`
+- multiplication: `*`, `x`, `X`, `×`
+- division: `/`, `÷`
+- modulo: `%`
+- exponentiation (power): `^`, `**`
+- square root: `sqrt`, `√`
+
+Run it with:
+
+```bash
+npm start -- 8 + 4
+```
+
+Or:
+
+```bash
+node src/calculator.js 8 + 4
+```
+
+Square root also supports a unary CLI form:
+
+```bash
+npm start -- sqrt 81
+```
+
 ---
 
 &copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
