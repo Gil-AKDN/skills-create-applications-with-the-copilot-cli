@@ -19,6 +19,9 @@ Supported operations:
 - subtraction: `-`
 - multiplication: `*`, `x`, `X`, `×`
 - division: `/`, `÷`
+- modulo: `%`
+- exponentiation (power): `^`, `**`
+- square root: `sqrt`, `√`
 
 Run it with:
 
@@ -30,6 +33,12 @@ Or:
 
 ```bash
 node src/calculator.js 8 + 4
+```
+
+Square root also supports a unary CLI form:
+
+```bash
+npm start -- sqrt 81
 ```
 
 ---

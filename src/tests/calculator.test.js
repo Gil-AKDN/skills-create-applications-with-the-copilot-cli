@@ -1,6 +1,6 @@
 'use strict';
 
-const { calculate } = require('../calculator');
+const { calculate, modulo, power, squareRoot } = require('../calculator');
 
 describe('calculate', () => {
   describe('addition', () => {
@@ -58,6 +58,54 @@ describe('calculate', () => {
     });
   });
 
+  describe('modulo', () => {
+    test('returns the remainder of two numbers', () => {
+      expect(calculate(10, '%', 3)).toBe(1);
+      expect(modulo(10, 3)).toBe(1);
+    });
+
+    test('returns zero when the left operand is evenly divisible', () => {
+      expect(calculate(10, '%', 5)).toBe(0);
+    });
+
+    test('throws on modulo by zero', () => {
+      expect(() => calculate(8, '%', 0)).toThrow(
+        'Modulo by zero is not allowed.'
+      );
+    });
+  });
+
+  describe('power', () => {
+    test('raises a base to an exponent', () => {
+      expect(calculate(2, '^', 5)).toBe(32);
+      expect(calculate(2, '**', 5)).toBe(32);
+      expect(power(3, 4)).toBe(81);
+    });
+
+    test('supports zero and negative exponents', () => {
+      expect(calculate(9, '^', 0)).toBe(1);
+      expect(calculate(2, '^', -2)).toBe(0.25);
+    });
+  });
+
+  describe('square root', () => {
+    test('returns the square root of a number', () => {
+      expect(calculate(81, 'sqrt')).toBe(9);
+      expect(calculate(81, '√')).toBe(9);
+      expect(squareRoot(49)).toBe(7);
+    });
+
+    test('throws on negative numbers', () => {
+      expect(() => calculate(-9, 'sqrt')).toThrow(
+        'Square root of a negative number is not allowed.'
+      );
+    });
+
+    test('returns zero for zero input', () => {
+      expect(calculate(0, 'sqrt')).toBe(0);
+    });
+  });
+
   describe('image examples', () => {
     test('matches the basic operations shown in the example image', () => {
       expect(calculate(2, '+', 3)).toBe(5);
@@ -65,12 +113,18 @@ describe('calculate', () => {
       expect(calculate(45, '*', 2)).toBe(90);
       expect(calculate(20, '/', 5)).toBe(4);
     });
+
+    test('matches the extended operations shown in the example image', () => {
+      expect(calculate(5, '%', 2)).toBe(1);
+      expect(calculate(2, '^', 3)).toBe(8);
+      expect(calculate(16, '√')).toBe(4);
+    });
   });
 
   describe('input validation', () => {
     test('throws on unsupported operators', () => {
-      expect(() => calculate(8, '^', 2)).toThrow(
-        'Unsupported operator. Use one of: +, -, *, /, x, X, ×, ÷'
+      expect(() => calculate(8, 'log', 2)).toThrow(
+        'Unsupported operator. Use one of: +, -, *, /, %, ^, **, sqrt, √, x, X, ×, ÷'
       );
     });
 
@@ -83,6 +137,12 @@ describe('calculate', () => {
     test('throws when the right operand is not a valid number', () => {
       expect(() => calculate(2, '+', Number.POSITIVE_INFINITY)).toThrow(
         'Both operands must be valid numbers.'
+      );
+    });
+
+    test('throws when the square root operand is not a valid number', () => {
+      expect(() => squareRoot(Number.NaN)).toThrow(
+        'The operand must be a valid number.'
       );
     });
   });
